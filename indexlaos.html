@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>迷♂之商店</title>
+		<style type="text/css">
+			*{margin: 0; padding: 0;}
+			.header{
+				width: 100%;
+				height: 155px;
+				border-bottom: 2px solid #019040;
+			}
+			.header-center{
+				width: 1200px;
+				height: 120px;
+				margin: 0 auto;
+			}
+			.h-top{
+				width: 100%;
+				height: 35px;
+				line-height: 35px;
+				background-color: #f1f1f1;
+			}
+			.h-top-center{
+				width: 1200px;
+				height: 100%;
+				margin: 0 auto;
+			}
+			.h-top-center ul{
+				float: right;
+			}
+			.h-top-center li{
+				list-style: none;
+				float: left;
+				font-size: 12px;
+				color: #666;
+				margin-left: 5px;
+			}
+			.h-top-center li a{
+				text-decoration: none;
+				color: #666;
+			}
+			.h-top-center li a:hover{
+				color: #fff;
+				text-decoration: underline;
+				font-weight: bold;
+			}
+			
+			
+			.h-center-top{
+				width: 100%;
+				height: 80px;
+			}
+			.logo{
+				width: 50%;
+				height: 100%;
+				float: left;
+			}
+			.logo img{
+				height: 80px;
+				
+			}
+			.search{
+				width: 50%;
+				height: 100%;
+				float: left;
+			}
+			.search div{
+				float: right;
+			}
+			.search input{
+				width: 280px;
+				height: 35px;
+				border: 1px solid #ccc;
+				margin-top: 20px;
+			}
+			.search button{
+				width: 80px;
+				height: 35px;
+				color: #fff;
+				font-size: 14px;
+				font-weight: bold;
+				border: 1px solid #84c225;
+				background-color: #84c225;
+			}
+			.h-center-bottom{
+				width: 100%;
+				height: 40px;
+			}
+			
+			
+			
+			.h-c-b-l{
+				width:20%;
+				height: 100%;
+				float: left;
+				background-color: #019040;
+				color: #fff;
+				line-height: 40px;
+				text-align: center;
+				font-size: 20px;
+				font-family: "微软雅黑";
+			}
+			.h-c-b-r{
+				width:80%;
+				height: 100%;
+				float: left;
+				line-height: 40px;
+			}
+			.h-c-b-r li{
+				list-style: none;
+				float: left;
+				margin-left: 20px;
+				
+			}
+			.h-c-b-r li a{
+				text-decoration: none;
+				color: #666;
+				font-size: 18px;
+				font-family: "微软雅黑";
+			}
+			.h-c-b-r li a:hover{
+				color: red;
+			}
+			.active a{
+				color: red !important;
+			}
+			
+			
+			
+			.imgbanner{
+				width: 100%;
+				height: 450px;
+			}
+			.imgbanner-center{
+				width: 1200px;
+				height: 100%;
+				margin: 0 auto;
+			}
+			.imgbanner-center img{
+				width: 1200px;
+				height: 450px;
+			}
+			
+			.fruit-sell{
+				width: 100%;
+				height: 1220px;
+			}
+			.fruit-sell-center{
+				width: 1200px;
+				height: 100%;
+				margin: 0 auto;
+			}
+			.firstf{
+				width: 100%;
+				height: 560px;
+			}
+			
+			.fruit-l{
+				width: 595px;
+				height: 100%;
+				float: left;
+			}
+			.fruit-r{
+				width: 595px;
+				height: 100%;
+				float: right;
+				background-color: blue;
+			}
+			.titlef{
+				width: 100%;
+				height: 35px;
+				color: #666;
+			}
+			.titlef h2{
+				margin-left: 20px;
+			}
+			.listimg{
+				width: 555px;
+				height: 245px;
+				margin: 0 auto;
+				margin-bottom: 10px;
+			}
+			.img1{
+				width: 171px;
+				height: 100%;
+				float: left;
+				margin-right: 21px;
+				border: 1px solid #f4f4f4;
+				overflow: hidden;
+			}
+			.img1:hover{
+				border: 1px solid lightgreen;
+			}
+			.img2:hover{
+				border: 1px solid lightgreen;
+			}
+			.img3:hover{
+				border: 1px solid lightgreen;
+			}
+			.fshow{
+				width: 171px;
+				height: 170px;
+				transition:transform 3s;
+			}
+			.fshow:hover{
+				transform: scale(1.3,1.3); 
+			}
+			
+	       .fshow2{
+	       	    width: 171px;
+				height: 170px;
+				transition:transform 5s;
+	       }
+	       .fshow2:hover{
+	       	transform:rotate(360deg);
+	       }
+	        .fshow3{
+	       	    width: 171px;
+				height: 170px;
+				transition:transform 5s;
+	       }
+	       .fshow3:hover{
+	       	transform:rotateY(180deg);
+	       }
+			.fname{
+				font-size:14px ;
+				font-family: "微软雅黑";
+				color: #666;
+				height: 35px;
+				line-height: 35px;
+				padding-left: 10px;
+			}
+			.fprice{
+				color: #f00;
+				font-size: 16px;
+				font-weight: bold;
+				padding-left: 10px;
+			}
+			.img2{
+				width: 171px;
+				height: 100%;
+				float: left;
+				border: 1px solid #f4f4f4;
+			}
+			.img3{
+				width: 171px;
+				height: 100%;
+				float: right;
+				border: 1px solid #f4f4f4;
+			}
+			
+			.division{
+				width: 1200px;
+				height: 100px;
+				margin: 0 auto;
+				background-color: rgba(0,0,0,0.1);
+				font-size: 36px;
+				font-weight: bold;
+				color: darkgreen;
+				text-align: center;
+				line-height: 100px;
+			}
+			.bottom{
+				width: 100%;
+				height: 80px;
+				background-color: #424345;
+				line-height: 80px;
+				font-size: 30px;
+				color: #fff;
+			}
+			.bottom-t li{
+				list-style: none;
+				float: left;
+				margin-left: 95px;
+			}
+			.footer{
+				width: 100%;
+				height: 220px;
+				background-color: #F1F2F4;
+			}
+			.footer-center{
+				width: 1200px;
+				height: 100%;
+				margin: 0 auto;
+				
+			}
+			.t1{
+				width: 30%;
+				height: 100%;
+				float: left;
+			}
+			.t2{
+				width: 30%;
+				height: 100%;
+				float: left;
+			}
+			.t3{
+				width: 40%;
+				height: 100%;
+				float: left;
+			}
+			.t1 li{
+				list-style: none;
+				font-family: "微软雅黑";
+				font-size: 16px;
+				text-align: center;
+				margin-top: 10px;
+			}
+			.t2 li{
+				list-style: none;
+				font-family: "微软雅黑";
+				font-size: 16px;
+				text-align: center;
+				margin-top: 10px;
+			}
+			.t3 img{
+				float: right;
+				width: 100px;
+				height: 100px;
+				margin-top: 20px;
+			}
+			.t4{
+				margin-left: 380px;
+				margin-top: 129px;
+				font-size: 14px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!--header S-->
+		<div class="header">
+			
+			<!--header top S-->
+				<div class="h-topp">
+					<div class="h-top-center">
+						<ul>
+							<li>
+								<a href="login.html">
+									您好，请登录
+								</a>
+							</li>
+							<li>|</li>
+							<li>
+								<a href="javascript:void(0)">
+									免费注册
+								</a>
+							</li>
+							<li>|</li>
+							<li>
+								<a href="javascript:void(0)">
+									会员中心
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--header top E-->
+				
+			<div class="header-center">
+				<!--logo S-->
+				<div class="h-center-top">
+					<div class="logo">
+						<a href="javascript:void(0)">
+							<!--<img src="img/logo1.png"/>-->
+							<img src="img/evalogo.jpg"/>
+						</a>
+					</div>
+					
+					<div class="search">
+						<div>
+							<input type="search" placeholder="你要干啥。。。" />
+							<button>搜什么搜</button>
+						</div>
+					</div>
+				</div>
+				<!--logo E-->
+				
+				<!--导航条 S-->
+				<div class="h-center-bottom">
+					<div class="h-c-b-l">
+						优选分类
+					</div>
+					<div class="h-c-b-r">
+						<ul>
+							<li class="active">
+								<a href="javascript:void(0)">
+									网站首页
+								</a>
+							</li>
+							<li>|</li>
+							<li>
+								<a href="javascript:void(0)">
+									进口模型
+								</a>
+							</li>
+							
+							
+							
+							<li>|</li>
+							<li>
+								<a href="javascript:void(0)">
+									店主推荐
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--导航条 E-->
+			</div>
+		</div>
+		<!--header E-->
+		
+		<!--图片 轮播  e-->
+		<div class="imgbanner">
+			<div  class="imgbanner-center">
+				<img onmouseover="stopimg()" onmouseout="startimg()" id="imgroll"  src="img/bj.jpg"/>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			
+			var en=0;
+			
+			function rollimg(){
+				
+				
+				var imgs=["img/bj.jpg","img/eva1.jpg","img/eva3.jpg"];
+				
+				document.getElementById("imgroll").src=imgs[en];
+				
+				en++;
+				
+				if(en==3){
+					en=0;
+				}
+			}
+			
+			var st=setInterval(rollimg,1000);
+			
+			function stopimg(){
+				clearInterval(st);
+			}
+			function startimg(){
+				st=setInterval(rollimg,1000);
+			}
+			
+		</script>
+		<!--图片 轮播  E-->
+		
+		<!--goods S-->
+		<div class="fruit-sell">
+			<div class="fruit-sell-center">
+				
+				<!--第一行  goods  S-->
+				<div class="firstf">
+					
+					<div class="fruit-l">
+						<div class="titlef">
+							<h2>吃瓜群众推荐</h2>
+						</div>
+						<div class="listimg">
+							<div class="img1">
+								<p>
+									<img class="fshow" src="img/goods1.jpg"/>
+								</p>
+								<p class="fname">evaNO.1</p>
+								<p class="fprice">￥9.9</p>
+							</div>
+							<div class="img2">
+								<p>
+									<img class="fshow2" src="img/goods2.jpg"/>
+								</p>
+								<p class="fname">evano.2</p>
+								<p class="fprice">￥9.9</p>
+							</div>
+							<div class="img3">
+								<p>
+									<img class="fshow3" src="img/goods3.jpg"/>
+								</p>
+								<p class="fname">evaNO.3</p>
+								<p class="fprice">￥9.9</p>
+							</div>
+						</div>
+						
+						<div class="listimg">
+							<div class="img1">
+								<p>
+									<img class="fshow" src="img/goods1.jpg"/>
+								</p>
+								<p class="fname">eva</p>
+								<p class="fprice">￥9.9</p>
+							</div>
+							<div class="img2">
+								<p>
+									<img class="fshow" src="img/goods2.jpg"/>
+								</p>
+								<p class="fname">eva</p>
+								<p class="fprice">￥9.9</p>
+							</div>
+							<div class="img3">
+								<p>
+									<img class="fshow" src="img/goods3.jpg"/>
+								</p>
+								<p class="fname">eva</p>
+								<p class="fprice">￥9.9</p>
+							</div>
+						</div>
+						
+					</div>
+					
+					
+					<div class="fruit-l">
+						<div class="titlef">
+							<h2>秋明山用 </h2>
+						</div>
+						<div class="listimg">
+							<div class="img1">
+								<p>
+									<img class="fshow" src="img/goods1.jpg"/>
+								</p>
+								<p class="fname">eva</p>
+								<p class="fprice">￥9.9</p>
+							</div>
+							<div class="img2">
+								<p>
+									<img class="fshow" src="img/goods2.jpg"/>
+								</p>
+								<p class="fname">eva</p>
+								<p class="fprice">￥9.9</p>
+							</div>
+							<div class="img3">
+								<p>
+									<img class="fshow" src="img/goods3.jpg"/>
+								</p>
+								<p class="fname">eva</p>
+								<p class="fprice">￥9.9</p>
+							</div>
+						</div>
+						
+						<div class="listimg">
+							<div class="img1">
+								<p>
+									<img class="fshow" src="img/goods1.jpg"/>
+								</p>
+								<p class="fname">eva</p>
+								<p class="fprice">￥9.9</p>
+							</div>
+							<div class="img2">
+								<p>
+									<img class="fshow" src="img/goods2.jpg"/>
+								</p>
+								<p class="fname">eva</p>
+								<p class="fprice">￥9.9</p>
+							</div>
+							<div class="img3">
+								<p>
+									<img class="fshow" src="img/goods3.jpg"/>
+								</p>
+								<p class="fname">eva</p>
+								<p class="fprice">￥9.9</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<!--第一行  goods  E-->
+				
+				<!--分割条 S-->
+				
+				<div class="division">
+					韩红听了想打人
+				</div>
+				
+				<!--分割条 E-->
+				
+				
+				
+				<!--2  goods  S-->
+				<div class="firstf">
+					
+					<div class="fruit-l">
+						<div class="titlef">
+							<h2>五菱宏光</h2>
+						</div>
+						<div class="listimg">
+							<div class="img1">
+								<p>
+									<img class="fshow" src="img/cs.jpg"/>
+								</p>
+								<p class="fname">eva</p>
+								<p class="fprice">￥9.9</p>
+							</div>
+							<div class="img2">
+								<p>
+									<img class="fshow" src="img/cs.jpg"/>
+								</p>
+								<p class="fname">eva</p>
+								<p class="fprice">￥9.9</p>
+							</div>
+							<div class="img3">
+								<p>
+									<img class="fshow" src="img/cs.jpg"/>
+								</p>
+								<p class="fname">eva</p>
+								<p class="fprice">￥9.9</p>
+							</div>
+						</div>
+						
+						<div class="listimg">
+							<div class="img1">
+								<p>
+									<img class="fshow" src="img/cs.jpg"/>
+								</p>
+								<p class="fname">eva</p>
+								<p class="fprice">￥9.9</p>
+							</div>
+							<div class="img2">
+								<p>
+									<img class="fshow" src="img/cs.jpg"/>
+								</p>
+								<p class="fname">eva</p>
+								<p class="fprice">￥9.9</p>
+							</div>
+							<div class="img3">
+								<p>
+									<img class="fshow" src="img/cs.jpg"/>
+								</p>
+								<p class="fname">eva</p>
+								<p class="fprice">￥9.9</p>
+							</div>
+						</div>
+						
+					</div>
+					
+					
+					<div class="fruit-l">
+						<div class="titlef">
+							<h2>哲♂学</h2>
+						</div>
+						<div class="listimg">
+							<div class="img1">
+								<p>
+									<img class="fshow" src="img/cs.jpg"/>
+								</p>
+								<p class="fname">eva</p>
+								<p class="fprice">￥9.9</p>
+							</div>
+							<div class="img2">
+								<p>
+									<img class="fshow" src="img/cs.jpg"/>
+								</p>
+								<p class="fname">eva</p>
+								<p class="fprice">￥9.9</p>
+							</div>
+							<div class="img3">
+								<p>
+									<img class="fshow" src="img/cs.jpg"/>
+								</p>
+								<p class="fname">eva</p>
+								<p class="fprice">￥9.9</p>
+							</div>
+						</div>
+						
+						<div class="listimg">
+							<div class="img1">
+								<p>
+									<img class="fshow" src="img/cs.jpg"/>
+								</p>
+								<p class="fname">eva</p>
+								<p class="fprice">￥9.9</p>
+							</div>
+							<div class="img2">
+								<p>
+									<img class="fshow" src="img/cs.jpg"/>
+								</p>
+								<p class="fname">eva</p>
+								<p class="fprice">￥9.9</p>
+							</div>
+							<div class="img3">
+								<p>
+									<img class="fshow" src="img/cs.jpg"/>
+								</p>
+								<p class="fname">eva</p>
+								<p class="fprice">￥9.9</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<!--二  水goods  E-->
+				
+				
+			</div>
+		</div>
+		<!--goods  E-->
+		<!--底部S-->
+		
+		<div class="bottom">
+			  <div class="bottom-t">
+			  	<ul>
+					<li>正品保证</li>
+					<li>|</li>
+					<li>日本制造</li>
+					<li>|</li>
+					<li>顺丰运输</li>
+					<li>|</li>
+					<li>24H发货</li>
+					<li>|</li>
+				</ul>
+			  </div>
+			  
+		</div>
+		<!--版权和帮助S-->
+		 <div class="footer">
+		 	 <div class="footer-center">
+		 	 	<div class="t1">
+		 	 		<ul>
+		 	 			<li>帮助中心</li>
+		 	 			<li>订单查询</li>
+		 	 			<li>售后中心</li>
+		 	 			<li>联系地址：秋名山那个开五菱宏光的</li>
+		 	 		</ul>
+		 	 	</div>
+		 	 	<div class="t2">
+		 	 		<ul>
+		 	 			<li>联系我们</li>
+		 	 			<li>电话：6666</li>
+		 	 			<li>邮件：mister@Foxmail.com</li>
+		 	 			<li>备案：京ICPB备1008611</li>
+		 	 		</ul>
+		 	 	</div>
+		 	 	<div class="t3">
+		 	 		<img class="qepng" src="img/qe.png"/>
+		 	 		<div class="t4">
+		 	 			扫一扫，领红包
+		 	 		</div>
+		 	 	</div>
+		 	 </div>
+		 	    
+		 	 
+		 </div>
+		<!--版权和帮助e-->
+	
+	     
+	     	
+	     <!--底部E-->
+	     
+	</body>
+</html>

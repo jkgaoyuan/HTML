@@ -1,0 +1,15 @@
+1.学习内容
+（1）多层嵌套 一定要先画图啊
+（2）color: red !important; 提高color的 css优先级
+（3）background-color: rgba(0,0,0,0.1);色彩的另外一种写法
+（4）网页下面的帮助中心 版权什么的都是由 ul li 做的
+（5）记住几个常用的命令
+     text-align: center;
+      line-height: XXpx;
+      *{margin: 0; padding: 0;}
+	text-decoration: underline; 下划线
+（6）.fshow:hover   transform: scale(1.3,1.3);  图片动态变化 放大
+ 
+2.心得
+今天的新东西不是很多但是我要熟练运用的话需要跟多的练习  
+写代码的时候请注意自己的思路啊.思考的时候尽可能的仔细。

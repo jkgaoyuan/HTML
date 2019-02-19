@@ -1,0 +1,62 @@
+1.学习内容 
+HTML 文件 结构 
+内容要写在 body 之中  
+
+块标签  单独占一行 （大标题）
+
+eg  主要用着三个    
+			<h1></h1>
+			<h2></h2>
+			<h3></h3>
+<h1>文字</h1> 依次递减 h1 最大   
+行标签  不单独占一行 
+
+
+
+
+段落标签 （内容）
+<p> 文字</p>
+
+水平线标签  （一根线）
+<hr />
+
+div  （内容）div和段落标签 区别      段落标签之间会空行  div 不会  
+<div>文字</div>
+
+注释
+<!-- 内容  -->
+span 标签  
+<span></span>
+排序 
+有序			<ol>
+				<li>哈哈</li>
+				<li>呵呵</li>
+				<li>嘿嘿</li>
+				<li>嘻嘻</li>
+			</ol>
+			
+无须			<ul>
+				<li>黄忠</li>
+				<li>阿珂</li>
+				<li>干将莫邪</li>
+				<li>鲁班</li>
+				<li>项羽</li>
+			</ul>
+音乐播放 （自动播放  + 控制台）
+			<audio src="mp3/ghsy.mp3"  autoplay="autoplay" controls="controls"></audio>
+视频播放（自动播放  + 控制台）
+			<video src="mp3/ghsy.mp3" controls="controls" autoplay="autoplay"></video>
+超文本 连接  <a></a>  
+ target 作用 在新窗口 打开  网页
+<a href="目标"网页 target="_blank">目标文字</a>
+
+
+行标签
+			（1）<span></span>
+			（2）图片标签<img />
+			（3）换行标签 <br />
+			(4) a标签 <a></a>  超链接
+			(5)mp3 <audio></audio>
+			(6)mp4 <video></video>
+2.心得 
+学到了简单的HTML 结构 语句  

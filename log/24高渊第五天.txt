@@ -1,0 +1,18 @@
+1.学习内容
+  transform 命令要写在.xxx：hover{}中
+   transition命令要写在 .xxx  {}中
+（1）transition:transform 5s;  /*延迟加载*/  5s位要延迟的时间
+（2）transform: scale(1.5,1.5); /* 放大与缩小*/    scale(x,x)  x位要放大的倍数
+（3）transform:rotate(360deg);  /*2d  变换*/      rotate(XXXdeg); 旋转x度
+ （4）图片的轮播依靠js代码实现
+ （5）onmouseover="stopimg()"  当鼠标停靠时 进行stopimg（）
+      onmouseout="startimg()"  当鼠标离开时 进行stopimg（）
+  （6）overflow: hidden;溢出限制
+(7)<link rel="stylesheet" type="text/css" href="xxx"/>  <!--引入图标样式库-->  xxx指文件的的位置
+<!--bootstrap css-->  <!--jquery  js-->  <!--bootstrap  js-->  
+
+同样只更改 文件位置  但是要写在sytle 之上
+
+2.心得
+不知道 那些 公司的前端  后端 都是怎么活下来的。
+自己离独立的完成一个网页还有相当的距离。

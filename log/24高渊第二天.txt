@@ -1,0 +1,33 @@
+1.学习内容
+选择器：
+ID选择器：唯一，不可以重复利用，不推荐使用  #xxxx{}  有#的是ID选择器  
+类选择器：不唯一，可以重复利用，推荐使用class          .xxxxx   有.xxx的是类选择器
+标签选择器。
+
+设计与 内容  分离  
+eg: 设置字体  
+font-family: "微软雅黑"; 字体
+font-size: 30px;  大小
+font-style: italic; 倾斜
+font-weight: bold; 加粗
+line-height: XXpx;/*字体垂直居中*/
+.XXXX a:hover{     /*鼠标悬停 伪选择器*/
+text-decoration: undeline;
+}
+.xxxx a{/*去掉下划线*/
+text-decoration: none;
+color: #666;}
+
+.xxxx{
+float: right;
+padding-top: 75px; 
+padding-left: 25px;
+background-image: url(img/q-icon.png); /*背景图片的位置*/
+background-repeat: no-repeat;/*背景图片的偏移*/
+background-position: 0 79px;/* 第一位 控制左右  第二位控制 上下 负值  正值*/
+				
+}
+
+
+2.心得  
+jd登陆的页面有点蒙  

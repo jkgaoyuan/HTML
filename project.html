@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>GAME</title>
+		
+			<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css"/>
+		<style type="text/css">
+			/*字体声明S*/
+			@font-face {
+    		font-family: 'Bold-Dot-Digital-7';
+    		src:url('font/Bold-Dot-Digital-7.ttf.woff') format('woff'),
+        	url('font/Bold-Dot-Digital-7.ttf.svg#Bold-Dot-Digital-7') format('svg'),
+        	url('font/Bold-Dot-Digital-7.ttf.eot'),
+        	url('font/Bold-Dot-Digital-7.ttf.eot?#iefix') format('embedded-opentype'); 
+        	font-weight: normal;
+        	font-style: normal;
+            
+            }
+            @font-face{
+            font-family: 'Think-Nothing';
+    		src:url('font/Think-Nothing.ttf.woff') format('woff'),
+        	url('font/Think-Nothing.ttf.svg#Think-Nothing') format('svg'),
+       	 	url('font/Think-Nothing.ttf.eot'),
+        	url('font/Think-Nothing.ttf.eot?#iefix') format('embedded-opentype');
+            font-weight: normal;
+        	font-style: normal;
+            }  
+            @font-face {
+    		font-family: 'Acens';
+    		src:url('font/Acens.ttf.woff') format('woff'),
+    	    url('font/Acens.ttf.svg#Acens') format('svg'),
+     	    url('font/Acens.ttf.eot'),
+    	    url('font/Acens.ttf.eot?#iefix') format('embedded-opentype'); 
+     	    font-weight: normal;
+     	    font-style: normal;
+}        
+			/*字体声明E*/
+			*{margin: 0; padding: 0;}
+			/*背景*/
+			.header{
+				width: 100%;
+				height: 1080px;
+			    background-image: url(imgg/bnr.jpg);
+			    background-repeat: no-repeat;
+			    background-size: 100%,100%;
+				overflow:hidden
+			}
+ 			.header-title{
+ 				color: #fff;
+ 				width: 50%;
+ 				height: 20px;
+				font-family: "Bold-Dot-Digital-7";
+				
+				margin-top: 25px;
+			    margin-left: 800px;
+				
+ 			}/*导航栏 黑色*/
+			.h-c{
+			    width: 1200px;
+				height: 90px;	
+			    background-color:black;
+			    margin: 0 auto;
+			    margin-top: 40px;
+			    background-image: url(imgg/logo.png);
+			    background-position: 250px 18px ;
+			    background-repeat: no-repeat;
+				
+			}/*联系方式完成*/
+			.header-title li{
+			 	list-style: none;
+			 	margin-right: 80px;
+				
+			}
+			
+            .h-c-l{
+            	width: 20%;
+				height: 100%;
+				float: left;
+				color: white;
+				text-align: center;
+            }
+            .h-c-l span{
+            	font-family: 'Bold-Dot-Digital-7';
+            	font-size: 24px;
+            	color: #0dc5dd;
+            	line-height: 90px;
+            	
+            }
+            .fa-gamepad{
+             color: white;
+              MARGIN-RIGHT: -18PX;
+   			 MARGIN-LEFT: 12PX;
+            } 
+            .h-c-r{
+            	width: 80%;
+				height: 100%;
+				float: left;  
+            	
+            }
+            
+            .h-c-r li{
+            	list-style: none;
+            	float: right;
+            	margin-right: 85px;
+            	margin-top: 36px;
+            	font-family: 'Bold-Dot-Digital-7';
+            	font-size: 20px;
+            	color: white;
+            	
+             }
+             .h-c-r li:hover{
+              color:#0dc5dd ;	
+             }
+   
+			.dropdown {
+    		display: inline-block;
+			}
+
+			.dropdown-content {
+    		display: none;
+   			 position: absolute;
+   		 	background-color: #f9f9f9;
+   		 	min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			}
+
+			.dropdown-content a {
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+			}
+
+			.dropdown-content a:hover {background-color: #f1f1f1}
+
+			.dropdown:hover .dropdown-content {                          /*二级菜单的结束*/
+   			 display: block;
+			}
+           .welcome h3{
+           	color: #fff;
+           	font-family:'Think-Nothing' ;				/*  font-family: 'Bold-Dot-Digital-7';字体没设置Think Nothing*/
+           	text-align: center;
+           	margin-top: 114px;
+           	font-size: 2em;
+           	 
+           }
+           .welcome h1{
+           	color: #fff;
+           	font-family:'Think-Nothing' ;	
+           
+           	margin:0 auto;
+           	font-size: 6em;
+           	text-align: center;
+           	margin-top: 30px;
+           } 
+          .inc{
+          	width: 1200px;
+			height: 50px;
+			margin: 0 auto;
+			
+			margin-top: 40px;
+			color: white;
+          }
+          .inc i{
+          	margin-left: 50px;
+          	line-height: 50px;
+          }
+          .inc i:hover{
+          	color: #0dc5dd;
+          }
+          .inc-c{
+          	width: 47%;
+			height: 100%;
+			margin: 0 auto;
+          }
+          .h-middle{
+          	width: 100%;
+          	height: 372px;
+          
+          	overflow:hidden
+          	
+          }
+          .h-middle h3{
+          	text-align: center;
+          	font-size: 2.8em;
+          	color: #ffdd57;
+          	font-family: "微软雅黑";
+          	margin-top:130px;
+          	
+          }
+          .h-middle h5{
+          	text-align: center;
+          	font-size: 1.8em;
+          	color: #0dc5dd;
+          	font-family: "微软雅黑";
+          	margin-top:12px;
+          	
+          }
+         .h-middle h4{
+          	text-align: center;
+          	font-size: 1em;
+          	color: #666;
+          	font-family: "微软雅黑";
+          	margin-top:17px;
+          }
+          .middle{
+          	width: 100%;
+          	height: 1416px;
+          	
+          }
+         .m-l{
+         	width: 56%;
+          	height: 1416px;
+          	
+          	float: left;
+         }
+         .m-l-l{
+         	width: 357.549px;
+          	height: 1031px;
+          	
+          	float: left;
+          	margin-left: 74px;
+         }/*中部内容 -顶部  我分了左右两部分*/
+         .m-l-l-t
+         {width: 100%;
+         height: 38%;
+         
+         overflow:hidden
+         	
+         } 
+        
+         .m-l-l-t-title:hover{
+         	background-color: #FFDD57;
+         	border: 1px solid #fff;
+         }
+         .m-l-l-t-img {
+         	width: 100%;
+         	height: 198px;
+         	background-image: url(imgg/c1.jpg);
+         	background-size: 100% 100%;
+         }
+         .m-l-l-t-img :hover{
+         	background-color: #FFDD57;
+         	
+         }
+         .m-l-l-t-img h5{
+         	width: 41PX;
+         	color:black ;
+         	margin-left: 25px;
+         	padding:8PX 23PX ;
+         	background-color: #FFF;
+         	
+         }
+         .m-l-l-t-info h4 {
+         	color: #333;
+    		font-size: 1em;
+    		font-family: 'Titillium Web', sans-serif;
+    		margin-bottom: 8px;
+    		margin-top: 20px;
+    		margin-left: 12px;
+         }
+         .m-l-l-t-info p{
+         	color: #999;
+         	font-size: 0.9em;
+         	line-height: 20px;
+    		margin-left: 10px;
+         }
+         .more{
+         	width: 100%;
+         	height: 51px;
+         	background-color:#FFDD57;
+            margin-top: 55px;
+         }
+         .more a{
+         	background-color:#FFDD57 ;
+         	text-decoration: none;
+         	color: #474747;
+         	border: 1px solid #474747;
+    		padding: 6px 16px;
+    		margin-top: 79px;
+    		font-size: 0.8em;
+    		line-height: 51px;
+    		margin-left: 20px;
+         }
+         /*中部内容 -底部*/
+         .m-l-l-f
+         {width: 100%;
+         height: 62%;
+         /*background-color: firebrick;*/
+         	
+         }  
+         .m-l-l-f-img{
+         	width: 100%;
+         	height: 447px;
+         	background-image: url(imgg/c2.png);
+         	background-size: 100% 100%;
+         }
+          .m-l-l-f-img :hover{
+         	background-color: #FFDD57;
+         	
+         }
+         .m-l-l-f-img h5{
+         	width: 41PX;
+         	color:black ;
+         	margin-left: 25px;
+         	padding:8PX 23PX ;
+         	background-color: #FFF;
+         	
+         }
+         .m-l-l-f-info h4 {
+         	color: #333;
+    		font-size: 1em;
+    		font-family: '', ;           /*字体*/
+    		margin-bottom: 8px;
+    		margin-top: 20px;
+    		margin-left: 12px;
+         }
+         .m-l-l-f-info p{
+         	color: #999;
+         	font-size: 0.9em;
+         	line-height: 20px;
+    		margin-left: 10px;
+         }
+         .more{
+         	width: 100%;
+         	height: 51px;
+         	background-color:#FFDD57;
+            margin-top: 55px;
+         }
+         .more a{
+         	background-color:#FFDD57 ;
+         	text-decoration: none;
+         	color: #474747;
+         	border: 1px solid #474747;
+    		padding: 6px 16px;
+    		margin-top: 79px;
+    		font-size: 0.8em;
+    		line-height: 51px;
+    		margin-left: 20px;
+         }
+         
+         .m-l-r{
+         	width: 357.549px;
+          	height: 1031px;
+          
+          margin-left: 463px;
+          	
+         }
+         .m-l-r-t{
+         width: 100%;
+         height: 38%;
+        /* background-color: firebrick;*/	
+         }
+         /*her*/
+         .m-l-r-t
+         {width: 100%;
+         height: 62%;
+         /*background-color: firebrick;*/
+         	
+         }  
+         .m-l-r-t-img{
+         	width: 100%;
+         	height: 447px;
+         	background-image: url(imgg/c3.jpg);
+         	background-size: 100% 100%;
+         }
+          .m-l-r-t-img :hover{
+         	background-color: #FFDD57;
+         	
+         }
+         .m-l-r-t-img h5{
+         	width: 41PX;
+         	color:black ;
+         	margin-left: 25px;
+         	padding:8PX 23PX ;
+         	background-color: #FFF;
+         	
+         }
+         .m-l-r-t-info h4 {
+         	color: #333;
+    		font-size: 1em;
+    		font-family: 'Titillium Web', sans-serif;
+    		margin-bottom: 8px;
+    		margin-top: 20px;
+    		margin-left: 12px;
+         }
+         .m-l-r-t-info p{
+         	color: #999;
+         	font-size: 0.9em;
+         	line-height: 20px;
+    		margin-left: 10px;
+         }
+         .more{
+         	width: 100%;
+         	height: 51px;
+         	background-color:#FFDD57;
+            margin-top: 55px;
+         }
+         .more a{
+         	background-color:#FFDD57 ;
+         	text-decoration: none;
+         	color: #474747;
+         	border: 1px solid #474747;
+    		padding: 6px 16px;
+    		margin-top: 79px;
+    		font-size: 0.8em;
+    		line-height: 51px;
+    		margin-left: 20px;
+         }
+        /*her end*/
+         .m-l-r-f{
+         width: 100%;
+         height:38%;
+         
+         }
+         /*her*/
+        .m-l-r-f
+         {width: 100%;
+         height: 38%;
+         /*background-color: firebrick;*/
+         	
+         }  
+         .m-l-r-f-img{
+         	width: 100%;
+         	height: 198px;
+         	background-image: url(imgg/c4.jpeg);
+         	background-repeat: no-repeat;     
+         	background-size: 100% 100%;    }
+          .m-l-r-f-img :hover{
+         	background-color: #FFDD57;
+         	
+         }
+         .m-l-r-f-img h5{
+         	width: 41PX;
+         	color:black ;
+         	margin-left: 25px;
+         	padding:8PX 23PX ;
+         	background-color: #FFF;
+         	
+         }
+         .m-l-r-f-info h4 {
+         	color: #333;
+    		font-size: 1em;
+    		font-family: 'Titillium Web', sans-serif;
+    		margin-bottom: 8px;
+    		margin-top: 20px;
+    		margin-left: 12px;
+         }
+         .m-l-r-f-info p{
+         	color: #999;
+         	font-size: 0.9em;
+         	line-height: 20px;
+    		margin-left: 10px;
+         }
+         .more{
+         	width: 100%;
+         	height: 51px;
+         	background-color:#FFDD57;
+            margin-top: 57px;
+         }
+         .more a{
+         	background-color:#FFDD57 ;
+         	text-decoration: none;
+         	color: #474747;
+         	border: 1px solid #474747;
+    		padding: 6px 16px;
+    		margin-top: 79px;
+    		font-size: 0.8em;
+    		line-height: 51px;
+    		margin-left: 20px;
+         }
+        /*herend*/
+          .ps4info{
+          	width: 745px;
+          	height: 320px;
+          	/*background-color: khaki;*/
+            margin-left:74px;
+            border: 1px solid #A8A8A8;
+          }
+          .ps4info-grid{
+          	width: 684px;
+          	height: 188px;
+          	/*background-color: firebrick;*/
+          	
+          }
+          .ps4info-grid-l{
+          	width: 65%;
+          	height: 100%;
+          	 float: left;
+          }
+          .ps4text{
+          	width: 510px;
+          	height: 120px;
+          	text-align: center;
+          	margin-top: 48px;
+          	font-family: "微软雅黑";
+            font-size: 18px;
+            color: #0DC5DD
+
+          }
+          .ps4text a{
+          	text-decoration: none;
+          	color: black;
+          	font-family: "微软雅黑";
+          	padding: 5px 27px;
+          	border: 1px solid black;
+          	margin-left: -291px;
+          }
+          .ps4text a:hover{
+          	color: #0DC5DD;
+          	border: 1px solid #0DC5DD;
+          }
+          .ps4img{
+          	width: 20%;
+            height: 100%;
+            float: left;
+            margin-left: 101px;
+          }
+           .ps4img img{
+           	width: 175px;
+            height: 175px;
+           }
+          
+          .news{
+          	width:120px;
+          	height: 34px;
+          	background-color: black;
+          	margin-left: 45px;
+          	margin-top: 22px;
+          	
+          	
+          }
+          .news h4{
+          	color: white;
+          	font: bold;
+          	font-size: 27px;
+          	
+          	text-align: center;
+          	font-family: 'Bold-Dot-Digital-7', sans-serif;
+            margin-left: 6px;
+          }
+          .m-r{
+          	width: 380px;
+          	height: 1178px;
+          	
+            margin-left: 888px; 
+          }
+          .m-r-list{
+          	width: 380px;
+          	height: 358px;
+          
+          	
+          }
+           .m-r-header1{
+           	width: 100%;
+          	height: 44px;
+   			 
+           }
+           .m-r-header1-l{
+           	width: 50%;
+          	height: 100%;
+          	float:left;
+          	text-align: center;
+          	line-height: 44px;
+          	background-color:#FFDD57 ;
+          	font-family: 'Acens';
+           }
+           .m-r-header1-r{
+           	width: 50%;
+          	height: 100%;
+          	float: left;
+          	text-align: center;
+          	line-height: 44px;
+          	background-color: white;
+          	font-family: 'Acens';
+           }
+           .m-r-header1-l:hover{
+           	
+         	background-color: #CDCDCD;
+           }
+           .m-r-header1-r:hover{
+           	
+         	background-color: #CDCDCD;
+           }
+           .m-r-body1{
+           	width: 100%;
+           	height: 314px;
+           
+           }
+           .m-r-body1 one{
+           	width: 100%;
+           	height: 33.3%;
+           /*	background-color: rosybrown;*/
+           }
+           
+           .one{
+           	width: 100%;
+           	height: 33.3%;
+           	
+           }
+           .one-img{
+           	width: 91px;
+           	height: 78px;
+           	float: left;
+           }
+           .one-img img{
+           	width: 91px;
+           	height: 78px
+           }
+           .one-text{
+            padding: 5px 5px;
+           }
+           .one-text p{
+           margin-top: 9px;
+           color: #999;
+           font-size: 16px;
+           margin-left: 6pc;
+           }
+           .one-text h4{
+           color: #0dc5dd;
+           text-align: center;
+    	   margin-top: 5px;
+    	   font-size: 20px;    
+           }
+           .one-text h4:hover{
+            	color:#ffdd57 ;
+            }
+           .two{
+           	width: 100%;
+           	height: 33.3%;
+           	
+           }
+           .two-img{
+           	width: 91px;
+           	height: 78px;
+           	float: left;
+           }
+           .two-img img{
+           	width: 91px;
+           	height: 78px
+           }
+           
+           .two-text{
+           	padding: 5px 5px;
+           }
+           .two-text p{
+           margin-top: 9px;
+           color: #999;
+           font-size: 16px;
+           margin-left: 6pc;
+           }
+           .two-text h4{
+           color: #0dc5dd;
+           text-align: center;
+    	   margin-top: 5px;
+    	   font-size: 20px;    
+           }
+           .two-text h4:hover{
+            	color:#ffdd57 ;
+            }
+           .three{
+           	width: 100%;
+           	height: 33.3%;
+           
+           }
+           .three-img{
+           	width: 91px;
+           	height: 78px;
+           	float: left;
+           }
+           .three-img img{
+           	width: 91px;
+           	height: 78px
+           }
+           .three-text{
+           	padding: 5px 5px;
+           }
+           .three-text p{
+           margin-top: 9px;
+           color: #999;
+           font-size: 16px;
+           margin-left: 6pc;
+           }
+           .three-text h4{
+           color: #0dc5dd;
+           text-align: center;
+    	   margin-top: 5px;
+    	   font-size: 20px;    
+           }
+           .three-text h4:hover{
+            	color:#ffdd57 ;
+            }
+            .TOPGAME{
+            	width: 100%;
+            	height: 368px;
+            	
+            	
+            }
+            .TOPGAME h4{
+            	text-align: center;
+                color: white; 
+                background-color: #474747;       
+                padding: 10px 16px; 
+                font-size: 20px; 
+                font-family:'Acens';
+                  }
+            .TOPGAMElist a{
+            	text-decoration: none;
+            	border: 1px solid #999;
+            	margin-top: 10px;
+            	color: #999;
+            	font-size: .9em;
+            	padding: 5px 5px;
+            	display: block;
+            	width: 97%;
+            	
+            }
+             
+            .tl:hover{
+            	background-color: #0dc5dd;
+            	color: white;
+            }
+            .PHOTOGALLERY{
+            	width: 100%;
+            	height: 452px;
+            	background-color: #eee;
+            	float: left;
+            }
+            .PHOTOGALLERY h4{
+            	text-align: center;
+                color: white; 
+                background-color: #474747;       
+                padding: 10px 16px;  
+                font-size: 20px;
+                font-family:'Acens';
+            }
+            .pho-space1{
+            	width: 100%;
+            	height: 33px;
+            	
+            }
+            .row1{
+            	width: 350px;
+            	height: 95px;
+            	margin: 0 auto;
+            	
+            }
+            .row11{
+            	width: 30%;
+            	height: 100%;
+            	float: left;
+            	background-image: url(imgg/p1.png);
+            	background-size: 100% 100%;
+            }
+            
+            .row12{
+            	width: 30%;
+            	height: 100%;
+            	float: left;
+            	background-image: url(imgg/p2.jpg);
+            	margin-left: 18px;
+            	background-size: 100% 100%;
+            }
+            .row13{
+            	width: 30%;
+            	height: 100%;
+            	float: right;
+            	background-image: url(imgg/p3.jpg);
+            	background-size: 100% 100%;
+            }
+            
+            .pho-space2{
+            	width: 100%;
+            	height: 33px;
+            	;
+            }
+            .row2{
+            	width: 350px;
+            	height: 95px;
+            	margin: 0 auto;
+            	
+            }
+            .row21{
+            	width: 30%;
+            	height: 100%;
+            	float: left;
+            	background-image: url(imgg/p4.jpg);
+            	background-size: 100% 100%;
+            }
+            
+            .row22{
+            	width: 30%;
+            	height: 100%;
+            	float: left;
+            	background-image: url(imgg/p5.jpg);
+            	margin-left: 18px;
+            	background-size: 100% 100%;
+            }
+            .row23{
+            	width: 30%;
+            	height: 100%;
+            	float: right;
+            	background-image: url(imgg/p6.jpg);
+            	background-size: 100% 100%;
+            }
+            .pho-space3{
+            	width: 100%;
+            	height: 33px;
+            	
+            }
+            .row3{
+            	width: 350px;
+            	height: 95px;
+            	margin: 0 auto;
+            	
+            }
+            .row31{
+            	width: 30%;
+            	height: 100%;
+            	float: left;
+            	background-image: url(imgg/p7.jpg);
+            	background-size: 100% 100%;
+            }
+            
+            .row32{
+            	width: 30%;
+            	height: 100%;
+            	float: left;
+            	background-image: url(imgg/p8.jpg);
+            	margin-left: 18px;
+            	background-size: 100% 100%;
+            }
+            .row33{
+            	width: 30%;
+            	height: 100%;
+            	float: right;
+            	background-image: url(imgg/p9.jpg);
+            	background-size: 100% 100%;
+            }
+           .footer{
+          	width: 100%;
+          	height: 300px;
+          	background-color: #333;
+          	float: left;
+          }
+          .information{
+          	width: 100%;
+          	height: 203px;
+          	overflow:hidden
+          }
+          .information1{
+          	width: 30%;  
+          	height:100%;
+          	float: left;
+          	margin-left: 130px;
+          	
+          }
+          .information1 h3{
+       	    margin-top: 20px;
+   			 padding: 0px 0px;
+    		font-size: 26px;
+          	color: #ffdd57;
+          }
+          .information1 p{
+          	margin-top: 65px;
+          	color: white;
+          	padding: 4PX;
+          	font-size: 0.85em;
+          }
+           .information1 input{
+           	    width: 262px;
+    			height: 39px;
+    			float: left;
+           }
+           
+           .information1 button{
+           	width: 138px;
+    		height: 43px;
+           	background-color: #0dc5dd;
+           	border: 1px solid #666;
+           }
+           .information1 button:hover{
+           	background-color:#333333 ;
+           	color:#0dc5dd ;
+           	border: 1px solid #0dc5dd;
+           }
+           .information2{
+          	    width: 229px;
+    			height: 100%;
+    			
+   			    float: left;
+    			margin-left: 50px;
+                }
+              .information2 h3{
+              	margin-top: 20px;
+   			 	
+    			font-size: 26px;
+          		color: #ffdd57;
+          		
+              }
+             .information2 ul li a{
+             	
+             	color: white;
+             	text-decoration: none;
+             	font-size: 0.85em;
+             	
+             } 
+             .information2 ul li{
+             	    margin: 10px;
+             	list-style: none;
+             }
+            .information3{
+          	    width: 229px;
+    			height: 100%;
+    			
+   			    float: left;
+    			margin-left: 110px;
+              }
+ 			.information3 h3{
+              	margin-top: 20px;
+   			 	
+    			font-size: 26px;
+          		color: #ffdd57;
+          		
+              }
+             .information3 ul li a{
+             	
+             	color: white;
+             	text-decoration: none;
+             	font-size: 0.85em;
+             	
+             } 
+             .information3 ul li{
+             	    margin: 10px;
+             	list-style: none;
+             }
+     		.powerby{
+     			width: 100%;
+     			height: 80px;
+     			
+     			float: left;
+     		}
+     		.powerby p{
+     			margin-top: 70px;
+     			color: white;
+             	text-align: center;
+             	font-size: 0.85em;
+             	
+     		}
+		</style>
+	</head>
+	<body>
+	 <div class="header">
+			  
+			<div class="header-title">
+				<ul>
+						<li><i class="fa fa-phone"></i> (+1)000 123 456789 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope-o"></i>   info@example.com</li>
+						
+				</ul>
+				
+			</div>
+			<div class="h-c">
+				
+				<div class="h-c-l">
+					  	<span>
+					  		GMAECORES<i class="fa fa-gamepad"></i>
+					  	</span> 
+				</div> 
+				<div class="h-c-r">
+					<ul>
+						<li>REVIEW</li>
+						<li>ABOUT</li>
+					
+						<li>CENTER</li>
+						
+						<li>GALLEY</li>
+						<li>HOME</li>
+						
+						
+						
+					</ul>  	
+				</div>
+				
+			</div>
+			<div class="welcome">
+				<h3>WELCOME TO JOIN US</h3>
+					 
+				<h1>GAMECORES</h1>
+					 
+				
+			</div>
+			<div class="inc">
+				<div class="inc-c">
+			    <i class="fa fa-qq fa-2x"></i>  
+				<i class="fa fa-weibo fa-2x"></i> 
+				<i class="fa fa-google-plus-circle fa-2x"></i> 
+				<i class="fa fa-wechat fa-2x"></i>
+				<i class="fa fa-facebook-square fa-2x"></i>  
+				<i class="fa fa-steam-square fa-2x"></i>  
+				</div>
+				                                              
+			</div>
+			<div class="h-middle">
+	 	        <h3>欢迎 来到 机核</h3>
+	 	        <h5>从游戏到生活,我们生产内容,关乎你喜爱的一切。</h5>
+	 	        
+	 	        <h4>从游戏开始聊聊 ，游戏之外的事。关于游戏，宇宙，生命，以及一切。 <br />
+	 	        只要你每天坚持自习 <br />认真刻苦，态度端正，忍受孤独 <br />最终的胜利肯定是属于那些考场上发挥好的人 <br />他大爷的遍不出来了
+	 	        </h4>
+			 </div>
+	 </div>
+	 <div class="middle"><!--中部开始-->
+	 	    <div class="m-l"><!--左边展示s-->
+	 	    	<div class="ps4info"> <!--ps4 information s-->
+	 	 		    <div class="news">
+	 	 		    	<h4>NEWS</h4>
+	 	 		    </div>
+	 	 		    
+	 	 		    <div class="ps4info-grid">
+	 	 		    	 <div class="ps4info-grid-l">
+	 	 		    	 		
+	 	 		    			<div class="ps4text">
+	 	 		    			<p> <br />  今日,通过3C证书查询我们发现一款PS4新机型已经 <br />通过认证,这台新机型似乎是PS4 Slim的最新型号!</p>
+	 	 		    			     <br /><br /><br />
+	 	 		    			    <a href="#" >
+	 	 		    			   
+	 	 		    			    readmore</a>
+	 	 		    			</div>
+
+	 	 		    	 </div>
+	 	 		    		
+	 	 		    		<div class="ps4img">
+	 	 		    			<img src="imgg/ps.jpg"/>
+	 	 		   			 </div>
+	 	 		    </div>
+	 	 		    
+	 	 		
+	 	    	</div>  				<!--ps4 information e-->
+	 	         <div class="m-l-l">    <!--左边展示区左部分s-->
+	 	         	<div class="m-l-l-t"> <!--左边展示区的上部分S-->
+	 	         		
+	 	         		 <div class="m-l-l-t-img">
+	 	         		 	<h5>ACTION</h5>
+	 	         		 </div>
+	 	         		 <div class="m-l-l-t-info">
+	 	         		 	<h4>Watch Dogs2</h4>
+	 	         		 	<p>Players will explore the birthplace of the tech revolution as Marcus Holloway  .</p>
+	 	         		 </div>
+	 	         		 <div class="more">
+							 <a href="">Read more</a>
+						 </div>
+	 	         	</div>                <!--左边展示区的上部分e-->
+	 	         	<div class="m-l-l-f"><!--左边展示区的下部分S-->
+	 	         		<div class="m-l-l-f-img">
+	 	         		 	<h5>SPORTS</h5>
+	 	         		 </div>
+	 	         		 <div class="m-l-l-f-info">
+	 	         		 	<h4>FIFA2016</h4>
+	 	         		 	<p>FIFA 15 brings football to life in stunning detail so fans can experience the emotion of the sport like never before. </p>
+	 	         		 </div>
+	 	         		 <div class="more">
+							 <a href="">Read more</a>
+						 </div>
+	 	         	</div>					<!--左边展示区的下部分e-->
+	 	         </div>					<!--左边展示区左部分e-->
+	 	         
+	 	         <div class="m-l-r">   <!--左边展示区右部分s-->
+	 	         	<div class="m-l-r-t"><!--左边展示区的上部分S-->
+	 	         	
+	 	         		<div class="m-l-r-t-img">
+	 	         		 	<h5>UBIFOFT</h5>
+	 	         		 </div>
+	 	         		 <div class="m-l-r-t-info">
+	 	         		 	<h4>Tom Clancy's Rainbow Six® Siege</h4>
+	 	         		 	<p>Tom Clancy's Rainbow Six Siege brings a new level of tensi.</p>
+	 	         		 </div>
+	 	         		 <div class="more">
+							 <a href="">Read more</a>
+						 </div>
+	 	         	</div>	<!--左边展示区的上部分e-->
+	 	         					
+	 	         	
+	 	         	
+	 	         	
+	 	         	<div class="m-l-r-f"><!--左边展示区的下部分S-->
+	 	         	 	<div class="m-l-r-f-img">
+	 	         		 	<h5>Racing</h5>
+	 	         		 </div>
+	 	         		 <div class="m-l-r-f-info">
+	 	         		 	<h4>Forza Horizon 2</h4>
+	 	         		 	<p>Race through a massive wide-open world featuring dramatic weather and day-to-night cycle in Forza Horizon.</p>
+	 	         		 </div>
+	 	         		 <div class="more">
+							 <a href="">Read more</a>
+						 </div> 
+	 	         	
+	 	         	</div>				<!--左边展示区的下部分e-->
+	 	         </div> 				<!--左边展示区右部分e-->
+	 	    </div>						<!--左边展示区E-->
+	 	 	               
+	 	 	<div class="m-r"><!--右展示区边s-->
+	 	 		<div class="m-r-list"><!--右展示区第一个S-->
+	 	 			<div class="m-r-header1"><!--右展示区第一个头部s-->
+	 	 				<div class="m-r-header1-l">
+	 	 				   Trending
+	 	 				</div>
+	 	 					<div class="m-r-header1-r">
+	 	 					   	Recent posts 
+	 	 					</div>
+	 	 					
+	 	 				
+	 	 			</div><!--右展示区第一个头部E-->
+	 	 			<div class="m-r-body1">    <!--第一个的body   S-->
+	 	 				<div class="one">
+	 	 					<div class="one-img">
+	 	 						<img src="imgg/eva3.jpg"/>
+	 	 					</div>
+	 	 					<div class="one-text">
+	 	 						<h4>CS:GO</h4>
+	 	 						<p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+	 	 					</div>
+	 	 				</div>
+	 	 				<div class="two">
+	 	 					<div class="two-img">
+	 	 						<img src="imgg/eva1.jpg"/>
+	 	 					</div>
+	 	 					<div class="two-text">
+	 	 						<h4>GTA</h4>
+	 	 						<p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+	 	 					</div>
+	 	 					
+	 	 				</div>
+	 	 				<div class="three">
+	 	 					<div class="three-img">
+	 	 						<img src="imgg/eva2.jpg"/>
+	 	 					</div>
+	 	 					<div class="three-text">
+	 	 						<h4>THE DIVISIN</h4>
+	 	 						<p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+	 	 					</div>
+	 	 					
+	 	 				</div>
+	 	 			</div>                      <!-- 右展示区第一个的body  e-->
+	 	 		</div><!--右展示区第一个E-->
+	 	 		<div class="TOPGAME"><!--右边展示区topgame  S-->
+	 	 			<h4>TOPGAME</h4>
+	 	 			 <div class="TOPGAMElist"><!--游戏列表 S-->
+	 	 			   
+	 	 			    <a href="#" class="tl" >Dota 2  </a> 
+	 	 			 	<a href="#"class="tl">Counter-Strike: Global Offensive </a> 	 
+	 	 			 	<a href="#"class="tl">PLAYERUNKNOWN'S BATTLEGROUNDS</a>     
+	 	 			 	<a href="#"class="tl">PAYDAY 2</a>     		 
+	 	 			 	<a href="#"class="tl">Team Fortress 2</a>     
+	 	 			 	<a href="#"class="tl">Grand Theft Auto V </a>               	 
+	 	 			 	<a href="#"class="tl">ARK: Survival Evolved</a>             
+	 	 			 	<a href="#"class="tl">H1Z1: King of the Kill </a>           
+	 	 			 	
+	 	 			 </div>                       <!--游戏列表E-->
+	 	 		</div>               <!--右边展示区topgame  E-->
+	 	 	   	<div class="PHOTOGALLERY">  <!--照片墙的S-->
+	 	 			 <h4>PHOTOGALLERY</h4>
+	 	 			
+	 	 			 	  <div class="pho-space1">
+	 	 			 	  	
+	 	 			 	  </div>
+	 	 			 	  <div class="row1">
+	 	 			 	  	 <div class="row11">
+	 	 			 	  	 	
+	 	 			 	  	 </div>
+	 	 			 	  	 <div class="row12">
+	 	 			 	  	 	
+	 	 			 	  	 </div>
+	 	 			 	  	 <div class="row13">
+	 	 			 	  	 	
+	 	 			 	  	 </div>
+	 	 			 	  </div>
+	 	 			 	  <div class="pho-space2">
+	 	 			 	  	
+	 	 			 	  </div>
+	 	 			 	  <div class="row2">  <!--第二行S-->
+	 	 			 	  	 <div class="row21">
+	 	 			 	  	 	
+	 	 			 	  	 </div>
+	 	 			 	  	 <div class="row22">
+	 	 			 	  	 	
+	 	 			 	  	 </div>
+	 	 			 	  	 <div class="row33">
+	 	 			 	  	 	
+	 	 			 	  	 </div>                          
+	 	 			 	  </div>               <!--第二行E-->
+	 	 			 	  <div class="pho-space3">
+	 	 			 	  	
+	 	 			 	  </div>
+	 	 			 	  <div class="row3">    <!--第三行 S-->
+	 	 			 	  	
+	 	 			 	  	 <div class="row31">
+	 	 			 	  	 	
+	 	 			 	  	 </div>
+	 	 			 	  	 <div class="row32">
+	 	 			 	  	 	
+	 	 			 	  	 </div>
+	 	 			 	  	 <div class="row33">
+	 	 			 	  	 	
+	 	 			 	  	 </div>
+	 	 			 	  </div>       <!--第三行E-->
+	 	 			 
+	 	 		</div>						<!--照片墙的E->-->
+	 	 	</div>       <!--  右展示区边e -->                 
+	 	 
+	 </div><!--中部结束-->
+	  <div class="footer"><!--底部开始-->
+	  	  <div class="information"> <!--子目录 S-->
+	  	
+	  	  	   <div class="information1"><!--左s-->
+	  	  	   		 <h3>订阅</h3>
+	  	  	   		 <p>如果想要第一时间，接收我们的信息请在下方输入您的Emli地址</p>
+	  	  	    	 <input type="text"  placeholder="ENTRER EMLI" />
+				 	<button>确认</button>
+	  	  	   </div><!--左 E-->
+	  	  	   <div class="information2"><!--中S-->
+	  	  	   	      <h3>类型</h3>
+				 <ul class="ftr-list">
+					 <li><a href="#">Action</a></li>
+					 <li><a href="#">Racing</a></li>
+					 <li><a href="#">Adventure</a></li>
+					 <li><a href="#">Simulation</a></li>
+					 <li><a href="#">Bike</a></li>
+				 </ul>
+	  	  	   </div><!--中S-->
+	  	  	   <div class="information3"><!--右S-->
+	  	  	   		 <h3>平台</h3>
+				 <ul class="ftr-list">
+					 <li><a href="#">Pc</a></li>
+					 <li><a href="#">Ps4</a></li>
+					 <li><a href="#">XBOX 360</a></li>					 
+					 <li><a href="#">XBOX ONE</a></li>
+					 <li><a href="#">PSP</a></li>
+				 </ul>		
+	  	  	   </div><!--右E-->
+	  	  </div>				<!--子目录 E-->
+	  	  <div class="powerby"><!--版权信息 S-->
+	  	  	 
+	  	  	 <p>MADE IN CHAINA  Designedby F xian  2017</p>
+	  	  </div>               <!--版权信息 e-->
+	  </div>   <!--底部结束-->
+	</body>
+</html>
+

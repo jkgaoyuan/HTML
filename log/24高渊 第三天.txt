@@ -1,0 +1,22 @@
+1.学习内容
+（1）display: none;/*隐藏与显示   none隐藏 block 显示*/
+（2）line-height: XXpx;  注意 lin-height 之后的 像素与 高度一致
+（3）border: 1px solid #e85356;    设置一根 1px宽 的实心 线段 #XXXX为颜色
+（4）background-repeat: no-repeat;  背景图片重复
+（5）<script type="text/javascript">
+	 js代码切换菜单 block 是显示 none为不显示
+      function show1(){
+      document.getElementById("menu1").style.display="block"; 
+      document.getElementById("menu2").style.display="none";}
+(5) padding: 3px;设置内边距 3px
+（6）.xxx aaa{} 的作用是修饰 xxx下 aaa的样式。
+（7）input type="text" placeholder="请输入手机号码"       输入框
+     input type="password" placeholde="密码"
+（8）text-align: center; 水平居中 文字
+（9）line-height: XXpx;  竖直方向  居中 文字
+(10) ul 原来可以做 网页下面的 连接啊
+(11)<button>登&nbsp;&nbsp;&nbsp;陆</button>  登陆 
+ 
+2.心得
+今天写代码感觉不是很好  .
+好心累啊  感觉是 入手简单学精了要花不少时间。233333333，好像还没20个字啊 。

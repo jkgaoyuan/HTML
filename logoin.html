@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JD登录</title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			.header{
+			 width: 100%;
+			 height: 100px;	
+			}
+			.header-center{
+				width: 1000px;
+                height: 100px;
+                margin: 0 auto;
+			}
+			.header-lefet{
+			 width: 50%;
+			 height: 100px;
+			 float: left ;
+			 line-height: 100px;
+			}
+			.header-right{
+			 width: 50%;
+			 height: 100px;
+			 float: right ;	
+			}
+			.logo{
+			width: 170px;
+			height: 100px;	
+			float: left;
+			}
+			.welcome{
+				
+				height: 100px;
+				float: left;
+				margin-left: 30px;
+				line-height: 100px;
+				font-size:24px ;
+				color: #666;
+				font-family: "微软雅黑";
+
+			}
+			.logoimg{
+			    width: 170px;
+				margin-top: 18px;	
+			}
+			
+			.survey{
+				float: right;
+				padding-top: 75px;
+				padding-left: 25px;
+				background-image: url(img/q-icon.png);
+				background-repeat: no-repeat;/*背景图片的偏移*/
+				background-position: 0 79px;
+				
+			}
+			.survey a{/*去掉下划线*/
+				text-decoration: none;
+				color: #666;
+				font-size: 12px;
+			}
+			.survey a:hover{/*鼠标悬停 伪选择器*/
+				text-decoration: underline;
+				color: red;
+			}
+			.middle{
+				width: 100%;
+				height: 500px;
+				background-color:#e93854; ;
+			}
+			.jdbg{
+				width: 1000px;
+				height: 500px;
+				margin: 0 auto;		
+				background-image: url(img/jdbg.png);
+				background-repeat: no-repeat;
+				background-size: 100% 100%; /*背景图片的大小*/		
+			}
+			.middle-right{
+				width: 346px;
+				height: 361px;
+				float: right;
+				background-color: #fff;
+				margin-top: 40px;
+				
+			}
+			.m-r-top{
+				width: 100%;
+				height: 54px;
+				border-bottom: 1px solid #f4f4f4;
+				
+			}
+			.m-r-t-1 a{
+				width: 49%;
+				height: 100%;
+				float: left;
+				text-align: center;
+				line-height: 54px;
+				border-right:1px solid #f4f4f4 ;
+				text-decoration: none;
+				color: #666;
+			}
+			.m-r-t-2 a{
+				width: 50%;
+				height: 100%;
+				float: left;
+				text-align: center;
+				line-height: 54px;
+				text-decoration: none;
+				color: #666;
+			}
+			.m-r-t-1 a{
+				text-decoration: none;
+				color: #666;
+				font-size: 18px;
+				font-family: "微软雅黑";	
+			}
+            .m-r-t-1 a:hover{
+            	font-weight: bold;
+            	color: #e4393c;
+            }
+            .m-r-t-2 a{
+				text-decoration: none;
+				color: #666;
+				font-size: 18px;
+				font-family: "微软雅黑";	
+			}
+            .m-r-t-2 a:hover{
+            	font-weight: bold;
+            	color: #e4393c;
+            }
+			.menu{
+				width: 100%;
+				height: 221px;
+			    padding-top: 35px;
+			}
+			.menu1{
+				width: 147px;
+				height: 147px;
+				margin: 0 auto;
+				margin-top: 0PX;
+				border: 1px solid #f4f4f4;
+				padding: 3px;
+			}
+			.menu1 img{
+				width: 147px;
+				height: 147px;
+			}
+			.menu2{
+				width:100% ;
+				height: 230px;
+				padding-top: 26px;
+				display: none;/*隐藏与显示   none隐藏 block 显示*/
+				}
+			.form1 {
+			    width: 90%;
+				height: 45px;
+				margin: 0 auto;
+				padding-top: 5px;	
+			}	
+			.form1{
+				width: 90%;
+				height: 45px;
+				margin: 0 auto;
+				padding-top: 5px;
+			}
+			.form2{
+				width: 90%;
+				height: 50px;
+				margin: 0 auto;
+				background-color: lawngreen;
+			}
+			.form3{
+				width: 90%;
+				height: 50px;
+				margin: 0 auto;
+				line-height: 50px;
+			}
+			.form4{
+				width: 90%;
+				height: 50px;
+				margin: 0 auto;
+				line-height: 50px;
+			}
+			.form1 input{
+				width:100% ;
+				height: 37px;
+				margin-top: 1px;
+				border: 0;
+				
+			}
+			.form2 input{
+				width:80% ;
+				height: 35px;
+			}
+			.form3 a{
+				text-decoration: none;
+				font-size: 12px;
+				color:#666 ;
+				float: right;
+			}
+			.form3 a:hover{
+				text-decoration: underline;
+				color: #e4393c;
+			}
+			.form4 button{
+				width:100% ;
+				height: 35px;
+				background-color:#e4393c;
+				border: 1px solid #e85356;
+				font-size: 20px;
+				color: #fff;
+				font-family: "微软雅黑";
+				line-height: 35px;
+			}
+			
+			.form1-phone{
+				width: 100%;
+				height: 40px;
+				border: 1px solid #ccc;
+			}
+			.p1{
+				width: 40px;
+				height: 100%;
+				float: left;
+				background-image: url(img/icons.png);
+				background-repeat: no-repeat;
+				background-position: 1px 1px;
+				border-right: 1px solid #ccc;
+			}
+			.p2{
+				width:270px ;
+				height: 100%;
+				float: left;
+			}
+			.p11{
+				width: 40px;
+				height: 100%;
+				float: left;
+				background-image: url(img/icons.png);
+				background-repeat: no-repeat;
+				background-position: -47px 1px;
+				border-right: 1px solid #ccc;
+			}			
+
+			.scan-anto{
+				width: 100%;
+				height: 35px;
+				line-height:35px;
+				text-align: center;
+				font-size: 12px;
+			}
+			.scan-anto span{
+				color:red;
+			}
+			.menu-bottom{
+				width: 100%;
+			 height: 55px;
+			
+			}
+			.menu-bottom-c{
+				width: 306px;
+				height: 100%;
+				margin: 0 auto;
+			}
+			.m-b-l{
+				width: 50%;
+				height: 100%;
+				float: left;
+			}
+			.m-b-r{
+				width: 50%;
+				height: 100%;
+				float: left;
+				line-height: 50px;
+			}
+			.qq{
+				width: 35%;
+				height: 30px;
+				float:left ;
+				border-right: 1px solid #f4f4f4;
+				margin-top: 10px;
+				text-align: center;
+				line-height: 30px;
+				font-size: 12px;
+				background-image: url(img/qq.png);
+				background-repeat: no-repeat;
+				background-position: -2px 6px;
+			}
+			.qq a{
+				text-decoration: none;
+				color:#666;
+			}
+			.qq a:hover{
+				text-decoration: underline;
+				color: red;
+			}
+			.weixin{
+				width: 35%;
+				height: 30px;
+				float:left ;
+				border-right: 1px solid #f4f4f4;
+				margin-top: 10px;
+				text-align: center;
+				line-height: 30px;
+				font-size: 12px;
+				background-image: url(img/weixin.png);
+				background-repeat: no-repeat;
+				background-position: -2px 6px;
+				
+			}
+			
+			.weixin a{
+				text-decoration: none;
+				color:#666;
+			}
+			.weixin a:hover{
+				text-decoration: underline;
+				color: red;
+			}
+
+			.m-b-r a{
+			    text-decoration: none;
+				color:red;
+				float:right;
+			}
+			.m-b-r a:hover{
+				text-decoration: underline;
+				color: red;
+			}
+			.foot{
+				width: 100%;
+				height: 80px;
+				
+			}
+			.foot-center{
+				width: 1000px;
+				height: 100%;
+				margin: 0 auto;
+			}
+			.link{
+				width: 100%;
+				height: 45px;
+				line-height: 40px;
+				
+			}
+			.link li{list-style: none;
+			  float: left;
+			  margin-left: 100px;
+			  font-size:12px;
+			  color: #666;
+			}
+			.banqun{
+				font-size: 12px;
+				width: 100%;
+				height: 40px;
+				text-align: center;
+				color:#666;
+			}
+		</style>
+	</head>
+	<body>
+		<!--页眉s-->
+		<div class="header">
+			<div class="header-center">
+				<div class="header-left">
+				   <div class="logo">
+				   	<img class="logoimg" src="img/JD.png" />
+				   	
+				   </div>
+				   <div class="welcome">
+				   	 <span>欢迎登陆</span>
+				   </div>
+				</div>
+				<div class="header-right">
+					<div class="survey">
+						<a href="javascript:void(0)	">调查问卷</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<!--页眉E-->
+		
+	     <!--中部-->
+	     <div class="middle">
+	     	  <div class="jdbg">
+	     	         <div class="middle-right">
+	     	  	        <div class="m-r-top">
+	     	  	        	<div class="m-r-t-1">
+							  <a onclick="show1()" href="javascript:void(0)">
+								扫码登录
+						    	</a>
+	     	  	        	</div>
+	     	  	        	<div class="m-r-t-2">
+							  <a onclick="show2()" href="javascript:void(0)">
+								账户登录
+						    	</a>
+	     	  	        	</div>
+	     	  	        </div>
+	     	  	        <!--js代码 且换 S-->
+                        <script type="text/javascript">
+                        	function show1(){
+							document.getElementById("menu1").style.display="block";
+							document.getElementById("menu2").style.display="none";                        		
+                        	}
+                        	function show2(){
+							document.getElementById("menu1").style.display="none";
+							document.getElementById("menu2").style.display="block";                       		
+                        	}
+                        </script>
+                       <!--js代码E-->
+                        <div class="menu" id="menu1">
+                        	<div class="menu1">
+                        		<div >
+                        			<img src="img/qe.png"/>
+                        		</div>
+                                <div class="scan-anto">
+                            	     请使用<span>手机</span>，扫描QE码。
+                                 </div>
+                        	</div>
+
+                        	
+                        </div>
+                        <div class="menu2" id="menu2">
+                        	 <div class="form1">
+                        		<div class="form1-phone">
+                        			  <div class="p1">
+                        				
+                        			   </div>
+                        			     <div class="p2">
+                        			           <input type="text" placeholder="请输入电话号码" />
+                        			     </div>
+                        		</div>
+                        	 </div>
+                        	<div class="form1">
+                        		<div class="form1-phone">
+                        		   <div class="p11">
+                        			 
+                        	    	</div>	
+                        	    	     <div class="p2">
+                        	    		    <input type="password" placeholder="请输入密码" />
+                        	    	     </div>
+                        		</div>
+                        		
+                        	</div>
+                        	      <div class="form3">
+                        		      <a href="javascript:void(0)">忘记密码</a>
+                        	      </div>
+                        	      <div class="form4">
+                        		       <button>登&nbsp;&nbsp;&nbsp;陆</button>
+                        	      </div>
+                        	    </div>
+                        
+                        <!--菜单底部  S-->
+					<div class="menu-bottom">
+						
+						<div class="menu-bottom-c">
+							
+							<div class="m-b-l">
+								<div class="qq">
+									<a href="javascript:void(0)">QQ</a>
+								</div>
+								<div class="weixin">
+									<a href="javascript:void(0)">微信</a>
+								</div>
+							</div>
+							
+							<div class="m-b-r">
+								<a href="javascript:void(0)">立即注册</a>
+							</div>
+							
+						</div>
+					</div>	
+                        <!--菜单底部  e-->
+                       
+	     	         </div>
+	     	         
+	     	  </div>
+
+	     </div>
+	     
+	    <!--weibu-->
+	    <!--页脚S-->
+        <div class="foot">
+        	<div class="foot-center">
+        		<div class="link">
+        			<ul>
+        				<li>bilibili</li>
+        				<li>|</li>
+        				<li>zealer</li>
+        				<li>|</li>
+        				<li>alibaba</li>
+        				<li>|</li>
+        				<li>taobao</li>
+        				<li>|</li>
+        			</ul>
+        		</div>
+        		<div class="banqun">
+        		     Copyright © 2004-2017   哲♂学     版权所有
+        	    </div>
+        	    
+        	</div>
+        	
+        </div>
+        <!--页脚S-->
+	</body>
+</html>
