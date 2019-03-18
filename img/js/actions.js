@@ -105,10 +105,34 @@ const Actions = [{
       hsla: color1
     }]
   },
-  {
+  // {
+  //   lifeTime: 180,
+  //   texts: [{
+  //       text: 'I',
+  //       hsla: color2
+  //     },
+  //     {
+  //       text: ' ❤️ ',
+  //       hsla: color3
+  //     },
+  //     {
+  //       text: 'Y',
+  //       hsla: color2
+  //     },
+  //     {
+  //       text: 'O',
+  //       hsla: color2
+  //     },
+  //     {
+  //       text: 'U',
+  //       hsla: color2
+  //     },
+  //   ]
+  // },
+    {
     lifeTime: 180,
     texts: [{
-        text: 'I',
+        text: 'Z',
         hsla: color2
       },
       {
@@ -116,15 +140,15 @@ const Actions = [{
         hsla: color3
       },
       {
-        text: 'Y',
+        text: 'D',
         hsla: color2
       },
       {
-        text: 'O',
+        text: 'D',
         hsla: color2
       },
       {
-        text: 'U',
+        text: '(づ￣ 3￣)づ',
         hsla: color2
       },
     ]
