@@ -1,0 +1,48 @@
+<!--声明文档类型-->
+<!doctype html>
+<html><!-- HTML标记 -->	
+	<head><!-- 头部 -->
+		<title>雷好哇</title> <!-- 网页名称 -->
+		<meta charset='utf-8'> <!-- 声明编码 -->
+	</head>
+	<body><!-- 身体 -->
+		<h4>超链接</h4>
+		<a href="https://www.baidu.com" target='_blank'>点我去百度</a>
+		<h4>download</h4>
+		<a href='Linux命令.xlsx'>download</a>
+		<!-- <div style='height:1000px;'> </div> -->
+		<h4>返回顶部</h4>
+		<a href='#'>返回顶部</a>
+		<h4>链接到javascript脚本</h4>
+		<input type="text" id='uname' placeholder='输入用户名'> <br>
+		<input type="password" id='upwd' placeholder='输入密码'> <br>
+		<a href="javascript:login()">登陆</a>
+		<script>
+			function login(){
+			var name = document.getElementById("uname").value
+			var pwd = document.getElementById("upwd").value
+			
+			if(name=='root' && pwd=='123456'){
+					alert("accept");
+			}else{
+					alert("null");
+				}
+			}
+		</script>
+		<h4>使用a标记的name属性的锚点</h4>
+		<a name="no1">i am chpater 1</a>
+		<h4>使用任意标记的id属性 标记锚点</h4>
+		<div id='no2'>i am chpater 2</div>
+		<div style='height:1000px;'> </div> 
+		<h4>链接到锚点</h4>
+		<br>
+		<a href="#no1">go to chpater 1</a>
+		<br>
+		<br>
+		<a href="#no2">go to chpater 2</a>
+		<h4>使用链接到其他页面锚点</h4>
+		<a href="maodian.html#no3">go to chpater 3 </a>
+		<div style='height:300px;'>
+		</div>
+	</body>
+</html>
