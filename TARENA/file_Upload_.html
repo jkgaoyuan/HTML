@@ -1,0 +1,34 @@
+<!--声明文档类型-->
+<!doctype html>
+<html><!-- HTML标记 -->	
+	<head><!-- 头部 -->
+		<title>雷好哇---file</title> <!-- 网页名称 -->
+		<meta charset='utf-8'> <!-- 声明编码 -->
+	</head>
+	<body><!-- 身体 -->
+				<h3>FILE</h3>
+		<form action="http://176.233.9.57/day05/05_file.php" enctype='multipart/form-data' method='post'>
+				<input type="file" name='pic'>
+				<h3>SUBMIT</h3>
+				<input type="submit">	
+				<h4>隐藏域</h4>
+				<input type="hidden" name='uid' >
+				<h4>what is you favored city?</h4>
+				<select name="city" id="" size='' >
+				<!-- multiple 加入这个属性后可以多选  size 决定显示的数量 select的属性-->
+				<option value="xian">XIAN</option>
+				<option value="">BEIJING</option>
+				<option value="">CHONGQING</option>
+				<option value="">CHENGDU</option>
+				<option value="">LIJIANG</option>
+				<option value="">WUHAN</option>
+				</select>
+				<h4>提交</h4>
+				<input type="submit">
+				<h4>文本域</h4>
+				<textarea name="content" id="" cols="30" rows="10" >请输入内容</textarea>
+				<h4>提交</h4>
+				<input type="submit">
+		</form>
+	</body>
+</html>
