@@ -572,3 +572,57 @@ regular
 2、value 定义控件的值
 取值：自定义
 3、checked 无值 属性 表示默认被勾选
+单选框
+eg:
+<input type="radio" name='login'>QQ <input type="radio" name='login'>
+这里一定要写name  不写的话单选框会变成复选框
+多选框
+eg:
+<td><input type="checkbox" onclick='submit'>自动登陆</td>
+#########################19.3.20
+
+文件
+用来上传文件
+语法：<input type='file' name=''>
+注意事项：
+1、将enctype的取值改为mulitipart/form-data
+2、将method的取值改为post////因为get限制文件大小 2kb
+
+隐藏域
+什么是：不想被用户看到，但是又需要提交的服务器的数据
+语法：<input type='hidden'>
+1. size 表示显示方式 如果取值大于1 那么以滚动菜单的方式显示
+2 .multiple 无值属性
+
+2）下拉菜单
+语法：<select></select>
+拉下菜单的内容由 选项菜单构成
+选项菜单
+语法：<option></option>
+1.value
+属性：用于定义控件的值
+取值:自定义
+3)文本域
+语法：<textarea></textarea>
+属性：
+1）clos 列
+取值 ：数字
+eg：<textarea name="" id="" cols="30" rows="10"></textarea>
+2）rows 行
+取值： 数字
+3）readonly 只读
+4）name 为控件命名，用于将数据提交到服务器
+取值 :自定义 
+5）其他属性
+label
+语法：
+<label for=""></label>
+作用：将文本域空间关联起来
+属性：for 
+取值：需要关联控件的id值
+eg:
+<input type="radio" name='login' id='jd'><label for="jd">jd钱包</label>
+点击文字相当于点击按钮
+
+
+所有的验证机制 全部使用 正则表达式来做  
